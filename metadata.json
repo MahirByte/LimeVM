@@ -1,0 +1,6 @@
+{
+  "name": "LimeVM",
+  "description": "True 60FPS Virtual Machine Emulator. Real website interactions, virtual filesystem, and high-speed pixel reconstruction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

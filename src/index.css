@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-lime-primary: #CCFF00;
+  --color-lime-dark: #050505;
+  --color-lime-surface: #111111;
+  --color-lime-aside: #0A0A0A;
+  --color-lime-item: #1A1A1A;
+  --color-lime-border: #222222;
+  --color-lime-border-light: #333333;
+  --color-lime-text: #EDEDED;
+  --color-lime-muted: #666666;
+}
+
+@layer base {
+  body {
+    @apply bg-lime-dark text-lime-text font-mono antialiased overflow-hidden;
+  }
+}
+
+.lime-grid {
+  background-image: radial-gradient(circle, rgba(204, 255, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.custom-cursor-none {
+  cursor: none !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-lime-border-light rounded-full;
+}
